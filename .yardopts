@@ -1,0 +1,11 @@
+--title "RDFgrid - Map/Reduce-based Linked Data Processing with Hadoop"
+--output-dir doc/yard
+--protected
+--no-private
+--hide-void-return
+--markup markdown
+--readme README.md
+-
+AUTHORS
+UNLICENSE
+VERSION
