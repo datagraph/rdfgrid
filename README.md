@@ -90,6 +90,16 @@ Mailing List
 
 * <http://groups.google.com/group/rdfgrid>
 
+Resources
+---------
+
+* <http://rdfgrid.rubyforge.org/>
+* <http://github.com/datagraph/rdfgrid>
+* <http://rubygems.org/gems/rdfgrid>
+* <http://rubyforge.org/projects/rdfgrid/>
+* <http://raa.ruby-lang.org/project/rdfgrid/>
+* <http://www.ohloh.net/p/rdfgrid>
+
 Authors
 -------
 
