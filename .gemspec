@@ -12,8 +12,8 @@ GEMSPEC = Gem::Specification.new do |gem|
   gem.description        = 'RDFgrid is a framework for batch-processing RDF data with Hadoop and Amazon Elastic MapReduce.'
   gem.rubyforge_project  = 'rdfgrid'
 
-  gem.authors            = ['Arto Bendiken']
-  gem.email              = 'arto.bendiken@gmail.com'
+  gem.authors            = ['Datagraph']
+  gem.email              = 'rdfgrid@googlegroups.com'
 
   gem.platform           = Gem::Platform::RUBY
   gem.files              = %w(AUTHORS README UNLICENSE VERSION bin/rdfgrid) + Dir.glob('lib/**/*.rb')
@@ -27,9 +27,9 @@ GEMSPEC = Gem::Specification.new do |gem|
 
   gem.required_ruby_version      = '>= 1.8.2'
   gem.requirements               = []
-  gem.add_development_dependency 'rdf-spec',  '>= 0.1.0'
-  gem.add_development_dependency 'rspec',     '>= 1.3.0'
-  gem.add_development_dependency 'yard' ,     '>= 0.5.3'
-  gem.add_runtime_dependency     'rdf',       '>= 0.1.2'
+  gem.add_development_dependency 'rdf-spec', '>= 0.1.0'
+  gem.add_development_dependency 'rspec',    '>= 1.3.0'
+  gem.add_development_dependency 'yard' ,    '>= 0.5.3'
+  gem.add_runtime_dependency     'rdf',      '>= 0.1.2'
   gem.post_install_message       = nil
 end
