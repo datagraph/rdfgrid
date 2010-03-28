@@ -1,9 +1,9 @@
 module RDFgrid
   module VERSION
     MAJOR = 0
-    MINOR = 0
+    MINOR = 1
     TINY  = 0
-    EXTRA = :pre
+    EXTRA = nil
 
     STRING = [MAJOR, MINOR, TINY].join('.')
     STRING << ".#{EXTRA}" if EXTRA
