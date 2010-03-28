@@ -1,10 +1,44 @@
 RDFgrid: Map/Reduce-based Linked Data Processing with Hadoop
 ============================================================
 
-RDFgrid is a framework for [map/reduce][MapReduce]-based batch-processing of
-[RDF][] data with [Hadoop][] and [Amazon Elastic MapReduce][AWS EMR].
+RDFgrid is a simple framework for [map/reduce][MapReduce]-based
+batch-processing of [RDF][] data with [Hadoop][] and [Amazon Elastic
+MapReduce][AWS EMR].
 
 * <http://github.com/datagraph/rdfgrid>
+
+Examples
+--------
+
+### A mapper for counting RDF predicate usage (`doc/examples/mapper.rb`)
+
+    #!/usr/bin/ruby -Ilib
+    require 'rdfgrid'
+
+    class PredicateCounter < RDFgrid::Mapper::StatementMapper
+      def process(statement)
+        yield statement.predicate, 1
+      end
+    end
+
+    PredicateCounter.process!
+
+### A reducer for summing up RDF predicate usage (`doc/examples/reducer.rb`)
+
+    #!/usr/bin/ruby -Ilib
+    require 'rdfgrid'
+
+    class PredicateSummer < RDFgrid::Reducer
+      def process(values)
+        yield values.inject(0) { |sum, value| sum + value.to_i }
+      end
+    end
+
+    PredicateSummer.process!
+
+### Running the mapper and reducer pipeline with a local N-Triples dataset
+
+    $ cat data.nt | ruby mapper.rb | sort | ruby reducer.rb
 
 Documentation
 -------------
