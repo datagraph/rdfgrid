@@ -85,6 +85,11 @@ as follows:
 
     % wget http://github.com/datagraph/rdfgrid/tarball/master
 
+Mailing List
+------------
+
+* <http://groups.google.com/group/rdfgrid>
+
 Author
 ------
 
