@@ -90,8 +90,10 @@ Mailing List
 
 * <http://groups.google.com/group/rdfgrid>
 
-Author
-------
+Authors
+-------
+
+RDFgrid is a [Datagraph][] technology.
 
 * [Arto Bendiken](mailto:arto.bendiken@gmail.com) - <http://ar.to/>
 
@@ -101,6 +103,7 @@ License
 RDFgrid is free and unencumbered public domain software. For more
 information, see <http://unlicense.org/> or the accompanying UNLICENSE file.
 
+[Datagraph]:  http://datagraph.org/
 [RDF]:        http://www.w3.org/RDF/
 [RDF.rb]:     http://rdf.rubyforge.org/
 [MapReduce]:  http://en.wikipedia.org/wiki/MapReduce
