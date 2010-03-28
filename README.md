@@ -7,6 +7,20 @@ MapReduce][AWS EMR].
 
 * <http://github.com/datagraph/rdfgrid>
 
+Features
+--------
+
+* Processes RDF data in the line-oriented, whitespace-separated
+  [N-Triples][] format.
+* Provides RDF statement manipulation using [RDF.rb][]'s object model; no
+  manual parsing or serialization involved.
+* Provides built-in aggregate combiners/reducers for the common `sum`,
+  `min`, `max`, and `avg` operations.
+* Compatible with [Hadoop Streaming][HStreaming] and Amazon's [Elastic
+  MapReduce][AWS EMR] service.
+* Available as a prepackaged archive with all dependencies included,
+  simplifying deployments using Hadoop's [distributed cache][HDCache].
+
 Examples
 --------
 
@@ -82,8 +96,11 @@ License
 RDFgrid is free and unencumbered public domain software. For more
 information, see <http://unlicense.org/> or the accompanying UNLICENSE file.
 
-[RDF]:       http://www.w3.org/RDF/
-[RDF.rb]:    http://rdf.rubyforge.org/
-[MapReduce]: http://en.wikipedia.org/wiki/MapReduce
-[Hadoop]:    http://hadoop.apache.org/
-[AWS EMR]:   http://aws.amazon.com/elasticmapreduce/
+[RDF]:        http://www.w3.org/RDF/
+[RDF.rb]:     http://rdf.rubyforge.org/
+[MapReduce]:  http://en.wikipedia.org/wiki/MapReduce
+[Hadoop]:     http://hadoop.apache.org/
+[AWS EMR]:    http://aws.amazon.com/elasticmapreduce/
+[N-Triples]:  http://blog.datagraph.org/2010/03/grepping-ntriples
+[HStreaming]: http://hadoop.apache.org/common/docs/current/streaming.html
+[HDCache]:    http://hadoop.apache.org/common/docs/current/mapred_tutorial.html#DistributedCache
