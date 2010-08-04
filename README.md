@@ -19,7 +19,7 @@ Features
 * Compatible with [Hadoop Streaming][HStreaming] and Amazon's [Elastic
   MapReduce][AWS EMR] service.
 * Available as a prepackaged archive with all dependencies included,
-  simplifying deployments using Hadoop's [distributed cache][HDCache].
+  simplifying deployments to Hadoop's [distributed cache][HDCache].
 
 Examples
 --------
